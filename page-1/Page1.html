@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borodinski</title>
+    <link rel="stylesheet" href="..//page-1/style-1.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("./img/Layer.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            font-family: FRANKLIN GOTHIC MEDIUM;
+        }
+
+        nav {
+            background-color: black;
+            display: flex;
+            padding: 0% 20%;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .login-img {
+            width: 10px;
+            height: 10px;
+            margin-left: auto;
+        }
+
+        .login {
+            margin-left: auto;
+        }
+
+        .nav_btts {
+            color: white;
+            background-color: black;
+            border: 0;
+            height: 100%;
+            padding: 2%;
+            text-decoration: none;
+            transition-duration: .3s;
+        }
+
+        .nav_btts:hover {
+            background-color: rgba(128, 128, 128, 0.429);
+        }
+
+        .index-logo {
+            margin: 40px auto;
+            width: 300px;
+        }
+
+        .adventages {
+            gap: 20px;
+            color: white;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            width: 60%;
+            align-items: cente;
+        }
+
+        .adventage {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        .quard {
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            rotate: 45deg;
+            margin: auto;
+        }
+
+        .adv_p {
+            font-size: small;
+        }
+
+        main {
+            width: 60%;
+            color: black;
+            background-color: white;
+            margin: auto;
+            padding: 2% 3%;
+            margin-top: 30px;
+        }
+
+        .main_h1 {
+            display: flex;
+            height: 60px;
+            padding: 0 20px;
+            gap: 46%;
+        }
+
+        .h2 {
+            width: 45%;
+            text-align: start;
+            padding-left: 20px;
+        }
+
+        .main_h2 {
+            display: flex;
+        }
+
+        .img_h2 {
+            width: 45%;
+            margin-left: auto;
+        }
+
+        .p_h2 {
+            margin: 0%;
+            font-size: small;
+        }
+
+        .main_b3 {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            padding: 0px 20px;
+            padding-right: 35px;
+        }
+
+        .main1_btt {
+            color: white;
+            background-color: black;
+            border: 0;
+            padding: 15px 46px;
+            text-decoration: none;
+            font-family: FRANKLIN GOTHIC MEDIUM;
+        }
+
+        .back {
+            margin-left: auto;
+        }
+
+        .contacts {
+            text-align: start;
+            padding-left: 20px;
+            width: 45%;
+        }
+
+        .cont_p {
+            font-size: small;
+        }
+
+        .main2_btt {
+            color: white;
+            background-color: black;
+            border: 0;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-family: FRANKLIN GOTHIC MEDIUM;
+            font-size: medium;
+        }
+
+        .obr {
+            margin-left: 10px;
+        }
+
+        .maim-inf {
+            display: flex;
+            margin-bottom: 70px;
+        }
+
+        .reg {
+            width: 45%;
+            margin-left: auto;
+            text-align: start;
+        }
+
+        .register {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+        }
+
+        .form-block {
+            width: 45%;
+        }
+
+        .inp {
+            border: 3px solid black;
+            width: 150px;
+            height: 40px;
+            padding: 15px;
+        }
+
+        .sub-btt {
+            width: 95%;
+            color: white;
+            background-color: black;
+            border: 0;
+            text-decoration: none;
+            font-family: FRANKLIN GOTHIC MEDIUM;
+            margin-top: 20px;
+            padding: 15px 30px;
+
+        }
+
+        footer {
+            display: flex;
+            align-items: start;
+            color: white;
+            background-color: rgb(35, 35, 35);
+            padding: 2% 20% 1% 20%;
+            justify-content: space-between;
+        }
+
+        .ft_inf {
+            text-align: start !important;
+            font-size: 10px;
+        }
+
+        .img_footer {
+            background-color: black;
+            width: 30px;
+
+        }
+
+        .child {
+            font-size: 12px;
+            background-color: black;
+            width: 30%;
+            padding: 7px 10px;
+            margin: auto;
+        }
+
+        .f_c {
+            width: 33%;
+            text-align: center;
+        }
+
+        .btt {
+            transition-duration: .5s;
+        }
+
+        .btt:active {
+            background-color: rgb(143, 77, 20);
+        }
+
+        .btt:hover {
+            background-color: rgb(143, 77, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button class="nav_btts mainbtt">
+            ГЛАВНЯ
+        </button>
+        <button class="nav_btts">
+            <a href="#news">НОВОСТИ</a>
+        </button>
+        <button class="nav_btts">
+            ПРАЙС-ЛИСТ
+        </button>
+        <button class="nav_btts">
+            <a href="..//page-2/index.html"> МАГАЗИН</a>
+        </button>
+        <button class="nav_btts">
+            <a href="#cont_inf">КОНТАКТЫ</a>
+        </button>
+        <button class="nav_btts login">
+            <img src="./img/login.png" class="login-img">
+            <span id="login_text"><a href="..//out.php">ВЫХОД</a> </span>
+        </button>
+    </nav>
+    <img src="./img/index-logo.png" class="index-logo">
+    <div class="adventages">
+        <div class="adventage">
+            <h3>БЫСТРО</h3>
+            <div class="quard"></div>
+            <p class="adv_p">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ
+                БЫСТРОЙ СТРИЖКИ - МИНУТКА </p>
+        </div>
+        <div class="adventage">
+            <h3>КРУТО</h3>
+            <div class="quard"></div>
+            <p class="adv_p">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ
+                СЛУЧАЕ ВНЕШНЕ.</p>
+        </div>
+        <div class="adventage">
+            <h3>ДОРОГО</h3>
+            <div class="quard"></div>
+            <p class="adv_p">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ
+                ДАЁТ ОПРЕДЕЛЁННЫЙ СТАТУС?</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="main_h1" id="news">
+            <h2>НОВОСТИ</h2>
+            <h2>ФОТОГАЛЕРЕЯ</h2>
+        </div>
+
+        <div class="main_h2">
+            <div class="h2">
+                <p class="p_h2">
+                    НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ <br>
+                    <br>
+                    <b> 11 января</b>
+                    <br>
+                    <br>
+                    В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ
+                    НАШИ СТРОЙНЫЕ РЯДЫ
+                    <br>
+                    <br>
+                    <b>18 января</b>
+                </p>
+            </div>
+            <div class="img_h2">
+                <img src="./img/Layer 21.png">
+            </div>
+        </div>
+
+        <div class="main_b3">
+            <button class="main1_btt btt ">
+                ВСЕ НОВОСТИ
+            </button>
+            <button class="main1_btt back btt">
+                НАЗАД
+            </button>
+            <button class="main1_btt btt">
+                ВПЕРЁД
+            </button>
+        </div>
+    </main>
+    <main class="maim-inf">
+        <div class="contacts">
+            <h2 id="cont_inf">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+            <p class="cont_p">БАРБЕРШОП "БОРОДИНСКИЙ"</p>
+            <p class="cont_p">АДРЕС: Г.САНКТ-ПЕТЕРБУРГ Б.КОНЮШЕННАЯ Д.19/8</p>
+            <p class="cont_p">ТЕЛЕФОН: +7 (495) 666-02-66</p>
+            <br>
+            <p class="cont_p">ВРЕМЯ РАБОТЫ:</p>
+            <p class="cont_p">ПН-ПТ: С 10:00 ДО 22:00</p>
+            <p class="cont_p">СБ-ВС: С 10:00 ДО 19:00</p>
+            <button class="main2_btt btt">
+                как проехать
+            </button>
+            <button class="main2_btt obr btt">
+                обратная свзь
+            </button>
+        </div>
+        <div class="reg">
+            <h2>ЗАПИСАТЬСЯ</h2>
+            <p class="cont_p">УКАЖИТЕ ЖЕЛАУМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+            <form class="register" action="./base.php" method="POST">
+                <div class="form-block">
+                    <p>ДАТА</p>
+                    <input class="inp" placeholder="ДД.ММ.ГГГГ" name="date" type="date" required>
+                </div>
+                <div class="form-block">
+                    <p>ВРЕМЯ</p>
+                    <input class="inp" placeholder="10:00" name="time" type="time" required>
+                </div>
+                <div class="form-block">
+                    <p>ВАШЕ ИМЯ</p>
+                    <input class="inp" placeholder="БОРОДА" name="name" type="text" required>
+                </div>
+                <div class="form-block">
+                    <p>ТЕЛЕФОН</p>
+                    <input class="inp" placeholder="+7 123 456-78-90" name="number" type="text" required>
+                </div>
+                <input class="sub-btt btt" type="submit" value="ОТПРАВИТЬ">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="ft_inf f_c">
+            <p>БАРБЕРШОП "БОРОДИНСКИЙ"</p>
+            <p>АДРЕС: Г.САНКТ-ПЕТЕРБУРГ Б.КОНЮШЕННАЯ Д.19/8</p>
+            <p><u>КАК НАС НАЙТИ?</u></p>
+            <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+        </div>
+        <div class="f_c">
+            <p style="font-size: 10px;">ДАВАЙТЕ ДРУЖИТЬ!</p>
+            <img src="./img/vk.png" class="img_footer">
+            <img src="./img/25305.png" class="img_footer">
+            <img src="./img/1640846929_20-abrakadabra-fun-p-znachok-instagram-chb-49.png" class="img_footer">
+        </div>
+        <div class="f_c">
+            <p style="font-size: 10px;">РАЗРАБОТАНО:</p>
+            <div class="child">учеником</div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="..//main.js"></script>
+
+</body>
+
+</html>
